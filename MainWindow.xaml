@@ -1,0 +1,769 @@
+﻿<Controls:MetroWindow x:Class="NeedHelpExamples.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:viewModel="clr-namespace:NeedHelpExamples.ViewModels"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      Title="AmTrust Manager 4.0"
+                      Height="720"
+                      Width="1080"
+                      WindowStartupLocation="CenterScreen" WindowState="Maximized">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/FlatButton.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro.Resources;component/Icons.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+
+            <x:Array x:Key="WindowCommandsOverlayBehaviorArray"
+                     Type="Controls:WindowCommandsOverlayBehavior">
+                <Controls:WindowCommandsOverlayBehavior>Always</Controls:WindowCommandsOverlayBehavior>
+                <Controls:WindowCommandsOverlayBehavior>Flyouts</Controls:WindowCommandsOverlayBehavior>
+                <Controls:WindowCommandsOverlayBehavior>HiddenTitleBar</Controls:WindowCommandsOverlayBehavior>
+                <Controls:WindowCommandsOverlayBehavior>Never</Controls:WindowCommandsOverlayBehavior>
+            </x:Array>
+
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Controls:MetroWindow.Flyouts>
+        <Controls:FlyoutsControl>
+            <Controls:Flyout Header="File"
+                             Position="Left"
+                             Theme="Adapt"
+                             Width="400"
+                             AnimateOpacity="True">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="350"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel>
+                        <TabControl Grid.Row="0" TabStripPlacement="Left">
+                            <TabItem Header="Release the Badgers"></TabItem>
+                            <TabItem Header="Release the Pidgeons"></TabItem>
+                            <TabItem Header="Release the Lions"></TabItem>
+                            <TabItem Header="Release the Living Puppets"></TabItem>
+                            <TabItem Header="Release the Tacos"></TabItem>
+                            <TabItem Header="Release the Eagles"></TabItem>
+                            <TabItem Header="Release the Developers"></TabItem>
+                        </TabControl>
+
+                        <Button Content="Redeem me for 50% off your next hug!" Grid.Row="2"></Button>
+                    </StackPanel>
+                </Grid>
+
+
+            </Controls:Flyout>
+        </Controls:FlyoutsControl>
+    </Controls:MetroWindow.Flyouts>
+
+    <Grid>
+        <DockPanel>
+
+
+        <Grid Height="225" DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+                <TabControl Height="Auto" DockPanel.Dock="Left" Grid.Column="0" Margin="0,0,10,0">
+                    <TabItem Header="FILE" MouseLeftButtonUp="ShowFileFlyout" Background="LightGray" Margin="-3,0,3,0"></TabItem>
+                </TabControl>
+                <TabControl DockPanel.Dock="Left" Grid.Column="1" ClipToBounds="False" MaxHeight="225">
+                <TabItem Header="HOME">
+                    <StackPanel ClipToBounds="False" Margin="-70,0,0,0" MaxHeight="225">
+                        <!--<ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">-->
+                                    <Viewbox>
+                            <StackPanel Orientation="Horizontal">
+                                    <GroupBox Header="Small Labels">
+                                        <UniformGrid Columns="3">
+                                            <StackPanel>
+                                                <Button Content="test" MinWidth="15"/>
+                                                <Label>Label1</Label>
+                                            </StackPanel>
+                                            <StackPanel TextBlock.TextAlignment="Center">
+                                                <Button Content="test" MinWidth="15"/>
+                                                <Label>Label2</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test" MinWidth="15"/>
+                                                <Label>Label3</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Label4</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Label5</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Boring Button Group">
+                                        <UniformGrid Columns="3">
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Label1</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Label2</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Really long Label3</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Label4</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Various Animals">
+                                        <UniformGrid Columns="3">
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Puppies</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Kitties</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Fish</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Spanish Weasel</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Domesticated Andoconda</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Random">
+                                        <UniformGrid Columns="3">
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>stuff</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>more stuff</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>more random stuff</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>stuff status</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Books">
+                                        <UniformGrid Columns="3">
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Harry Potter</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Discworld</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>GOT</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="candy">
+                                        <UniformGrid Columns="3">
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Snickers</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Recees</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>MnMs</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>100 Grand</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Take 5</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Almond Joy</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Rhyming Words">
+                                        <UniformGrid Columns="5">
+
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>test</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>pest</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>zest</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>rest</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>pressed</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>chest</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>stressed</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>impressed</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>carresed</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>lest</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="blargggg">
+                                        <UniformGrid Columns="3">
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>grldargle</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>meemur</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>trolololol</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Please End">
+                                        <UniformGrid Columns="3">
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>It's Finally</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>Over</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                </StackPanel>
+                                    </Viewbox>
+
+                        <!--</ScrollViewer>-->
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="UNDERWRITING">
+                        <Viewbox>
+                    <GroupBox Header="Underwriting" ClipToBounds="False" Margin="-60,0,0,0" >
+                        <StackPanel ClipToBounds="False" Margin="0,0,0,0" Orientation="Horizontal">
+                            <StackPanel >
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>puffa fish</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>wants to eat your</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>soul and understand</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>your relationship</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>with tacos</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>eat them with extra</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>Sour Cream</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>tastes so good</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>be sure</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>to avoid</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>Overly hot hot sauce</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>then you can't</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>taste</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>the wonderful</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>flavor</Label>
+                            </StackPanel>
+                            <StackPanel>
+                                <Button>
+                                    <Image Source="Images\testImage.jpg"/>
+                                </Button>
+                                <Label>of the tacos</Label>
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+                        </Viewbox>
+                    </TabItem>
+                <TabItem Header="AUDIT">
+                    <StackPanel ClipToBounds="False" Margin="-70,0,0,0"></StackPanel>
+                </TabItem>
+                <TabItem Header="PROCESSING">
+                    <StackPanel ClipToBounds="False" Margin="-70,0,0,0"></StackPanel>
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+
+
+
+            <Grid Height="225" DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TabControl Height="Auto" DockPanel.Dock="Left" Grid.Column="0" Margin="0,0,10,0">
+                    <TabItem Header="FILE" MouseLeftButtonUp="ShowFileFlyout" Background="LightGray" Margin="-3,0,3,0"></TabItem>
+                </TabControl>
+                <TabControl DockPanel.Dock="Left" Grid.Column="1" ClipToBounds="False" MaxHeight="225">
+                    <TabItem Header="HOME">
+                        <StackPanel ClipToBounds="False" Margin="-70,0,0,0" MaxHeight="225">
+                            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
+                                <StackPanel Orientation="Horizontal">
+                                    <GroupBox Header="Small Labels">
+                                        <Viewbox>
+                                            <UniformGrid Columns="3">
+                                                <StackPanel>
+                                                    <Button Content="test" MinWidth="15"/>
+                                                    <Label>Label1</Label>
+                                                </StackPanel>
+                                                <StackPanel TextBlock.TextAlignment="Center">
+                                                    <Button Content="test" MinWidth="15"/>
+                                                    <Label>Label2</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test" MinWidth="15"/>
+                                                    <Label>Label3</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Label4</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Label5</Label>
+                                                </StackPanel>
+                                            </UniformGrid>
+                                        </Viewbox>
+                                    </GroupBox>
+                                    <GroupBox Header="Boring Button Group">
+                                        <Viewbox>
+                                            <UniformGrid Columns="3">
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Label1</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Label2</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Really long Label3</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Label4</Label>
+                                                </StackPanel>
+                                            </UniformGrid>
+                                        </Viewbox>
+                                    </GroupBox>
+                                    <GroupBox Header="Various Animals">
+                                        <Viewbox>
+                                            <UniformGrid Columns="3">
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Puppies</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Kitties</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Fish</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Spanish Weasel</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Domesticated Andoconda</Label>
+                                                </StackPanel>
+                                            </UniformGrid>
+                                        </Viewbox>
+                                    </GroupBox>
+                                    <GroupBox Header="Random">
+                                        <Viewbox>
+                                            <UniformGrid Columns="3">
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>stuff</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>more stuff</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>more random stuff</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>stuff status</Label>
+                                                </StackPanel>
+                                            </UniformGrid>
+                                        </Viewbox>
+                                    </GroupBox>
+                                    <GroupBox Header="Books">
+                                        <Viewbox>
+                                            <UniformGrid Columns="3">
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Harry Potter</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Discworld</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>GOT</Label>
+                                                </StackPanel>
+                                            </UniformGrid>
+                                        </Viewbox>
+                                    </GroupBox>
+                                    <GroupBox Header="candy">
+                                        <Viewbox>
+                                            <UniformGrid Columns="3">
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Snickers</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Recees</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>MnMs</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>100 Grand</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Take 5</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Almond Joy</Label>
+                                                </StackPanel>
+                                            </UniformGrid>
+                                        </Viewbox>
+                                    </GroupBox>
+                                    <GroupBox Header="Rhyming Words">
+                                        <!--<Viewbox>-->
+                                        <UniformGrid Columns="5">
+
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>test</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>pest</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>zest</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>rest</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>pressed</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>chest</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>stressed</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>impressed</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>carresed</Label>
+                                            </StackPanel>
+                                            <StackPanel>
+                                                <Button Content="test"/>
+                                                <Label>lest</Label>
+                                            </StackPanel>
+                                        </UniformGrid>
+                                        <!--</Viewbox>-->
+                                    </GroupBox>
+                                    <GroupBox Header="blargggg">
+                                        <Viewbox>
+                                            <UniformGrid Columns="3">
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>grldargle</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>meemur</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>trolololol</Label>
+                                                </StackPanel>
+                                            </UniformGrid>
+                                        </Viewbox>
+                                    </GroupBox>
+                                    <GroupBox Header="Please End">
+                                        <Viewbox>
+                                            <UniformGrid Columns="3">
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>It's Finally</Label>
+                                                </StackPanel>
+                                                <StackPanel>
+                                                    <Button Content="test"/>
+                                                    <Label>Over</Label>
+                                                </StackPanel>
+                                            </UniformGrid>
+                                        </Viewbox>
+                                    </GroupBox>
+                                </StackPanel>
+
+                            </ScrollViewer>
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem Header="UNDERWRITING">
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
+                            <GroupBox Header="Underwriting" ClipToBounds="False" Margin="-70,0,0,0" >
+                                <StackPanel ClipToBounds="False" Margin="0,0,0,0" Orientation="Horizontal">
+                                    <StackPanel >
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>puffa fish</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>wants to eat your</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>soul and understand</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>your relationship</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>with tacos</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>eat them with extra</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>Sour Cream</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>tastes so good</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>be sure</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>to avoid</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>Overly hot hot sauce</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>the you can't</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>taste</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>the wonderful</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>flavor</Label>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <Button>
+                                            <Image Source="Images\testImage.jpg"/>
+                                        </Button>
+                                        <Label>of the tacos</Label>
+                                    </StackPanel>
+                                </StackPanel>
+                            </GroupBox>
+                        </ScrollViewer>
+                    </TabItem>
+                    <TabItem Header="AUDIT">
+                        <StackPanel ClipToBounds="False" Margin="-70,0,0,0"></StackPanel>
+                    </TabItem>
+                    <TabItem Header="PROCESSING">
+                        <StackPanel ClipToBounds="False" Margin="-70,0,0,0"></StackPanel>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Controls:MetroWindow>
