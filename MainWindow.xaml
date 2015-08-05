@@ -653,108 +653,110 @@
                         </StackPanel>
                     </TabItem>
                     <TabItem Header="UNDERWRITING">
+                            <StackPanel ClipToBounds="False" Margin="-70,0,0,0" MaxHeight="225">
                         <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
-                            <GroupBox Header="Underwriting" ClipToBounds="False" Margin="-70,0,0,0" >
-                                <StackPanel ClipToBounds="False" Margin="0,0,0,0" Orientation="Horizontal">
-                                    <StackPanel >
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>puffa fish</Label>
+                                <GroupBox Header="Underwriting" ClipToBounds="False" Margin="0,0,0,0" >
+                                    <StackPanel ClipToBounds="False" Margin="0,0,0,0" Orientation="Horizontal">
+                                        <StackPanel >
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>puffa fish</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>wants to eat your</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>soul and understand</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>your relationship</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>with tacos</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>eat them with extra</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>Sour Cream</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>tastes so good</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>be sure</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>to avoid</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>Overly hot hot sauce</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>then you can't</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>taste</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>the wonderful</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>flavor</Label>
+                                        </StackPanel>
+                                        <StackPanel>
+                                            <Button>
+                                                <Image Source="Images\testImage.jpg"/>
+                                            </Button>
+                                            <Label>of the tacos</Label>
+                                        </StackPanel>
                                     </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>wants to eat your</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>soul and understand</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>your relationship</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>with tacos</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>eat them with extra</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>Sour Cream</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>tastes so good</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>be sure</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>to avoid</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>Overly hot hot sauce</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>the you can't</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>taste</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>the wonderful</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>flavor</Label>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <Button>
-                                            <Image Source="Images\testImage.jpg"/>
-                                        </Button>
-                                        <Label>of the tacos</Label>
-                                    </StackPanel>
-                                </StackPanel>
-                            </GroupBox>
+                                </GroupBox>
                         </ScrollViewer>
+                            </StackPanel>
                     </TabItem>
                     <TabItem Header="AUDIT">
                         <StackPanel ClipToBounds="False" Margin="-70,0,0,0"></StackPanel>
@@ -763,6 +765,121 @@
                         <StackPanel ClipToBounds="False" Margin="-70,0,0,0"></StackPanel>
                     </TabItem>
                 </TabControl>
+            </Grid>
+
+            <Grid Height="225" DockPanel.Dock="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <Ribbon Name="TestRibbon" SelectedIndex="0">
+
+                    <!-- Help Pane, located at the right-hand side -->
+                    <Ribbon.HelpPaneContent>
+                        <RibbonButton SmallImageSource="Images/testImage.jpg" />
+                    </Ribbon.HelpPaneContent>
+                    <!-- Quick Access Toolbar - located at the upper-left corner -->
+                    <Ribbon.QuickAccessToolBar>
+                        <RibbonQuickAccessToolBar>
+                            <RibbonButton x:Name ="Save" SmallImageSource="Images\testImage.jpg" />
+                            <RibbonSplitButton x:Name ="Undo" SmallImageSource="Images\testImage.jpg">
+                                <RibbonSplitMenuItem Header="Undo 1" />
+                                <RibbonSplitMenuItem Header="Undo 2" />
+                                <RibbonSplitMenuItem Header="Undo 3" />
+                            </RibbonSplitButton>
+                            <RibbonSplitButton x:Name="Redo" SmallImageSource="Images\testImage.jpg" >
+                                <RibbonSplitMenuItem Header="Redo 1" />
+                                <RibbonSplitMenuItem Header="Redo 2" />
+                            </RibbonSplitButton>
+                        </RibbonQuickAccessToolBar>
+                    </Ribbon.QuickAccessToolBar>
+                    <!-- Application Menu, located at the left-hand side (down arrow) -->
+                    <Ribbon.ApplicationMenu>
+                        <RibbonApplicationMenu KeyTip="F">
+                            <RibbonApplicationMenuItem Header="Email" ImageSource="Images\testImage.jpg" />
+                            <RibbonApplicationMenuItem Header="Reference Links" ImageSource="Images\testImage.jpg" />
+                            <RibbonApplicationMenuItem Header="Admin Tools" ImageSource="Images\testImage.jpg" />
+                            <RibbonApplicationMenuItem Header="Most Recent Activities" ImageSource="Images\testImage.jpg" />
+                            <RibbonApplicationMenuItem Header="Theme" ImageSource="Images\testImage.jpg" />
+                            <RibbonApplicationMenuItem Header="Style" ImageSource="Images\testImage.jpg" />
+                            <RibbonApplicationMenuItem Header="About" ImageSource="Images\testImage.jpg" />
+                        </RibbonApplicationMenu>
+                    </Ribbon.ApplicationMenu>
+                    <!-- Ribbon Tab #1: Home -->
+                    <RibbonTab Header="Home" KeyTip="H" >
+                        <!-- Home  group-->
+                        <RibbonGroup x:Name="ClipboardGroup" Header="Home">
+                            <RibbonMenuButton LargeImageSource="Images\testImage.jpg" Label="Paste" KeyTip="V">
+                                <RibbonMenuItem ImageSource="Images\testImage.jpg" Header="Keep Text Only" KeyTip="T"/>
+                                <RibbonMenuItem ImageSource="Images\testImage.jpg" Header="Paste Special..." KeyTip="S"/>
+                            </RibbonMenuButton>
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Cut" KeyTip="X" />
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Copy" KeyTip="C" />
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Format Painter" KeyTip="FP" />
+                        </RibbonGroup>
+                        <!-- Employee And Payroll group-->
+                        <RibbonGroup x:Name="Employee" Header="Employee And Payroll">
+                            <RibbonMenuButton LargeImageSource="Images\testImage.jpg" Label="Employee" KeyTip="V">
+                                <RibbonMenuItem ImageSource="Images\testImage.jpg" Header="Keep Text Only" KeyTip="T"/>
+                                <RibbonMenuItem ImageSource="Images\testImage.jpg" Header="Paste Special..." KeyTip="S"/>
+                            </RibbonMenuButton>
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Save" KeyTip="X" />
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Add" KeyTip="C" />
+                        </RibbonGroup>
+
+                        <!-- Home  group-->
+                        <RibbonGroup x:Name="ClipboardGroup2" Header="Home">
+                            <RibbonMenuButton LargeImageSource="Images\testImage.jpg" Label="Paste" KeyTip="V">
+                                <RibbonMenuItem ImageSource="Images\testImage.jpg" Header="Keep Text Only" KeyTip="T"/>
+                                <RibbonMenuItem ImageSource="Images\testImage.jpg" Header="Paste Special..." KeyTip="S"/>
+                            </RibbonMenuButton>
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Cut" KeyTip="X" />
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Copy" KeyTip="C" />
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Format Painter" KeyTip="FP" />
+                        </RibbonGroup>
+                        <!-- Employee And Payroll group-->
+                        <RibbonGroup x:Name="Employee2" Header="Employee And Payroll">
+                            <RibbonMenuButton LargeImageSource="Images\testImage.jpg" Label="Employee" KeyTip="V">
+                                <RibbonMenuItem ImageSource="Images\testImage.jpg" Header="Keep Text Only" KeyTip="T"/>
+                                <RibbonMenuItem ImageSource="Images\testImage.jpg" Header="Paste Special..." KeyTip="S"/>
+                            </RibbonMenuButton>
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Save" KeyTip="X" />
+                            <RibbonButton SmallImageSource="Images\testImage.jpg" Label="Add" KeyTip="C" />
+                        </RibbonGroup>
+                    </RibbonTab>
+                    <!-- Ribbon Tab #2: -->
+                    <RibbonTab Header="Insert" KeyTip="I">
+                    </RibbonTab>
+                    <!-- Ribbon Tab #3: -->
+                    <RibbonTab Header="PageLayout" KeyTip="L">
+                    </RibbonTab>
+
+                </Ribbon>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TabControl Height="Auto" DockPanel.Dock="Left" Grid.Column="0" Margin="0,0,10,0">
+                    <TabItem Header="FILE" MouseLeftButtonUp="ShowFileFlyout" Background="LightGray" Margin="-3,0,3,0"></TabItem>
+                </TabControl>
+                <TabControl DockPanel.Dock="Left" Grid.Column="1" ClipToBounds="False" MaxHeight="225">
+                    <TabItem Header="HOME">
+                        <StackPanel ClipToBounds="False" Margin="-70,0,0,0" MaxHeight="225">
+                            
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem Header="UNDERWRITING">
+                        
+                    </TabItem>
+                    <TabItem Header="AUDIT">
+                        <StackPanel ClipToBounds="False" Margin="-70,0,0,0"></StackPanel>
+                    </TabItem>
+                    <TabItem Header="PROCESSING">
+                        <StackPanel ClipToBounds="False" Margin="-70,0,0,0"></StackPanel>
+                    </TabItem>
+                </TabControl>-->
             </Grid>
         </DockPanel>
     </Grid>
