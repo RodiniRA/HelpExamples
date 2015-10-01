@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using NeedHelpExamples.ViewModels;
+using MahApps.Metro;
 
 namespace NeedHelpExamples
 {
@@ -44,6 +45,20 @@ namespace NeedHelpExamples
             }
 
             flyout.IsOpen = !flyout.IsOpen;
+        }
+
+        private void ApplyInitialAccent(object sender, RoutedEventArgs e)
+        {
+            // add custom accent and theme resource dictionaries
+            ThemeManager.AddAccent("DefaultBlue", new Uri("Styles\\Accents\\Blue.xaml", UriKind.Relative));
+
+            // get the theme from the current application
+            var theme = ThemeManager.DetectAppStyle(Application.Current);
+
+            // now use the custom accent
+            ThemeManager.ChangeAppStyle(Application.Current,
+                                    ThemeManager.GetAccent("DefaultBlue"),
+                                    theme.Item1);
         }
     }
 }
